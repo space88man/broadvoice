@@ -1,7 +1,7 @@
 Summary:    broadvoice - a library for the BroadVoice 16 and 32 speech codecs
 Name:       broadvoice
 Version:    0.1.0
-Release:    1%{?dist}
+Release:    2%{dist}
 License:    LGPL2.1
 Group:      System Environment/Libraries
 URL:        http://www.soft-switch.org/broadvoice
@@ -58,5 +58,7 @@ rm -rf %{buildroot}
 %postun -p /sbin/ldconfig
 
 %changelog
-* Sat Nov 15 2009 Steve Underwood <steveu@coppice.org> 0.0.1
+* Sun Dec 01 2024 S-P Chan <shihping.chan@gmail.com> 0.1.0-2
+- Package with fedora copr+tito
+* Sun Nov 15 2009 Steve Underwood <steveu@coppice.org> 0.0.1
 - First pass
